@@ -11,4 +11,12 @@ df = pd.read_csv("E:/Machiene Learning/Multivariable Linear Regression/homeprice
 median_bedroom = math.floor(df.bedrooms.median())
 # print(median_bedroom)
 df.bedrooms = df.bedrooms.fillna(median_bedroom)
-print(df)
+# print(df)
+
+reg = linear_model.LinearRegression()
+reg.fit(df[['area', 'bedrooms', 'age']], df.price)
+# print(reg.coef_)
+# print(reg.intercept_)
+
+print(reg.predict([[3000, 3, 40]]))
+print(reg.predict([[2500, 4, 5]]))
