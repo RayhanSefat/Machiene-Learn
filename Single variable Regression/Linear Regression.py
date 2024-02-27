@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model
 import plotly.express as px
 
-df = pd.read_csv("homeprice.csv")
+df = pd.read_csv("E:/Machiene Learning/Single variable Regression/homeprice.csv")
 
 # fig = px.scatter(df, x = 'area', y = 'price', title='area vs price')
 # fig.show()
@@ -16,7 +16,7 @@ reg.fit(df[['area']], df.price)
 # print(reg.intercept_)
 # print(reg.predict([[3350]]))
 
-d = pd.read_csv("areas.csv")
+d = pd.read_csv("E:/Machiene Learning/Single variable Regression/areas.csv")
 # print(d)
 p = reg.predict(d)
 d['price'] = p
