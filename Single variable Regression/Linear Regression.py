@@ -44,5 +44,5 @@ plt.legend()
 # Show plot
 plt.show()
 
-with open('pickle_model', 'wb') as f:
+with open('Single variable Regression/pickle_model', 'wb') as f:
     pickle.dump(reg, f)
