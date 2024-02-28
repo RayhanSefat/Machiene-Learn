@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model
 import plotly.express as px
 import math
+import os
+default_directory = "E:\RAYHAN SEFAT\Machiene Learn"
+os.chdir(default_directory)
 
-df = pd.read_csv("E:/Machiene Learning/Multivariable Linear Regression/homeprice.csv")
+df = pd.read_csv("Multivariable Linear Regression\homeprice.csv")
 # print(df)
 
 median_bedroom = math.floor(df.bedrooms.median())
