@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model
 import plotly.express as px
+import pickle
 import os
 default_directory = "E:\RAYHAN SEFAT\Machiene Learn"
 os.chdir(default_directory)
@@ -42,3 +43,6 @@ plt.legend()
 
 # Show plot
 plt.show()
+
+with open('pickle_model', 'wb') as f:
+    pickle.dump(reg, f)
