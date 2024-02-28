@@ -13,7 +13,7 @@ def gradient_descent(x, y):
         bd = -(2 / n) * sum(y - y_predicted)
         m_curr = m_curr - learning_rate * md
         b_curr = b_curr - learning_rate * bd
-        # print("m {}, b {}, cost {}, iteratin {}".format(m_curr, b_curr, cost, i))
+        print("m {}, b {}, cost {}, iteratin {}".format(m_curr, b_curr, cost, i))
 
 x = np.array([1, 2, 3, 4, 5])
 y = np.array([5, 7, 9, 11, 13])
