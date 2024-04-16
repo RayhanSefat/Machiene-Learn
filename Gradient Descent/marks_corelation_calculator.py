@@ -10,7 +10,7 @@ os.chdir(default_directory)
 def gradient_descent(x, y):
     m_curr = 1.0
     b_curr = 2.0
-    iterations = 100
+    iterations = 10000
     n = len(x)
     learning_rate = 0.0001
 
